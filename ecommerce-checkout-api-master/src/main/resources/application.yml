@@ -11,7 +11,7 @@ spring:
       ddl-auto: create-drop
     properties:
       hibernate:
-        default_schema: checkout
+        # default_schema: checkout
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
         show_sql: true

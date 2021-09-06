@@ -2,10 +2,8 @@ package com.hatanaka.ecommerce.checkout.entity;
 
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Builder
 @Data
@@ -13,6 +11,7 @@ import javax.persistence.Entity;
 public class CheckoutEntity {
 
     @Id
+    @GeneratedValue()
     private Long id;
 
     @Column
