@@ -1,0 +1,12 @@
+
+##### INSTRUÇÕES PARA CRIAR, SUBIR E REMOVER CONTAINER "docker-compose.yml"
+## EM LINUX É NESCESSÁRIO "sudo"
+
+## CONSTRUIR E SUBIR
+docker-compose up --buid -d
+
+## LISTAR
+docker ps
+
+## PARAR E REMOVER
+docker-compose down
