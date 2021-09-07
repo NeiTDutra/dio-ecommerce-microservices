@@ -1,6 +1,9 @@
 package com.hatanaka.ecommerce.checkout.resource.checkout;
 
+import com.hatanaka.ecommerce.checkout.entity.CheckoutEntity;
+import com.hatanaka.ecommerce.checkout.service.CheckoutService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,9 +18,17 @@ public class CheckoutResource {
     private final CheckoutService checkoutService;
 
     @PostMapping("/")
-    public ResponseEntity<Void> create(@RequestBody CheckoutRequest checkoutRequest) {
+    public ResponseEntity<CheckoutResponse> create(@RequestBody CheckoutRequest checkoutRequest) {
 
-        checkoutService.create(checkoutRequest);
-        return ResponseEntity.ok().build();
+        final CheckoutEntity checkoutEntity = checkoutService
+                .create(checkoutRequest)
+                .orElseThrow();
+
+        final CheckoutResponse checkoutResponse = CheckoutResponse
+                .builder()
+                .code(checkoutEntity.getCode())
+                .build();
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(checkoutResponse);
     }
 }

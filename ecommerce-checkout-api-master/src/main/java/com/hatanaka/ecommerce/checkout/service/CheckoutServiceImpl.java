@@ -20,6 +20,7 @@ public class CheckoutServiceImpl implements CheckoutService{
         final CheckoutEntity checkoutEntity = CheckoutEntity
                 .builder()
                 .code(UUID.randomUUID().toString())
+                .status(CheckoutEntity.Status.CREATED)
                 .build();
         return Optional.of(checkoutRepository.save(checkoutEntity));
     }
