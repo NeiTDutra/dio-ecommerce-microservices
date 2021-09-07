@@ -33,16 +33,16 @@ spring:
               deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
               serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
       bindings:
-        checkout-created-output:
+        checkout-created-input:
           destination: streaming.ecommerce.checkout.created
           contentType: application/*+avro
-          producer:
+          consumer:
             use-native-encoding: true
-        payment-paid-input:
+        payment-paid-output:
           destination: streaming.ecommerce.payment.paid
           contentType: application/*+avro
           group: ${spring.application.name}
-          consumer:
+          producer:
             use-native-decoding: true
   kafka:
     properties:

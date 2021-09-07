@@ -19,7 +19,7 @@
     <remote-repository>
       <option name="id" value="maven" />
       <option name="name" value="maven" />
-      <option name="url" value="http://packages.confluent.io/maven/" />
+      <option name="url" value="https://packages.confluent.io/maven/" />
     </remote-repository>
   </component>
 </project>
