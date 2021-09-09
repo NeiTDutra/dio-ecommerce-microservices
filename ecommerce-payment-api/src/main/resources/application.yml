@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/checkout
+    url: jdbc:postgresql://localhost:5433/payment
     username: admin
     password: admin
     driver-class-name: org.postgresql.Driver
@@ -11,7 +11,7 @@ spring:
       ddl-auto: create-drop
     properties:
       hibernate:
-        default_schema: checkout
+        default_schema: payment
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
         show_sql: true
@@ -33,16 +33,16 @@ spring:
               deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
               serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
       bindings:
-        checkout-created-output:
+        checkout-created-input:
           destination: streaming.ecommerce.checkout.created
           contentType: application/*+avro
-          producer:
+          consumer:
             use-native-encoding: true
-        payment-paid-input:
+        payment-paid-output:
           destination: streaming.ecommerce.payment.paid
           contentType: application/*+avro
           group: ${spring.application.name}
-          consumer:
+          producer:
             use-native-decoding: true
   kafka:
     properties:

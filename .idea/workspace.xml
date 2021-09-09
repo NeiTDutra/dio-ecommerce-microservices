@@ -5,75 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7323d3a-9595-4394-bd9f-63fe72f0372f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/java/com/hatanaka/ecommerce/payment/config/StreamingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/java/com/hatanaka/ecommerce/payment/listener/CheckoutCreatedListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/java/com/hatanaka/ecommerce/payment/streaming/CheckoutProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/avro/CheckoutCreated.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/avro/PaymentCreated.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/e-commerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-commerce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/checkout.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/checkout.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/docker/docker-up-down.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/docker/docker-up-down.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/docker/kafka/init-topics.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/docker/kafka/init-topics.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/CheckoutApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/CheckoutApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/config/StreamingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/config/StreamingConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/entity/CheckoutEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/entity/CheckoutEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/repository/CheckoutRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/repository/CheckoutRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/resource/checkout/CheckoutRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/resource/checkout/CheckoutRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/resource/checkout/CheckoutResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/resource/checkout/CheckoutResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/resource/checkout/CheckoutResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/resource/checkout/CheckoutResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/service/CheckoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/service/CheckoutService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/service/CheckoutServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/service/CheckoutServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/streaming/CheckoutCreatedSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/streaming/CheckoutCreatedSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/java/com/hatanaka/ecommerce/checkout/streaming/PaymentPaidSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/streaming/PaymentPaidSink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/resources/avro/CheckoutCreated.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/avro/CheckoutCreated.avsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api-master/src/test/java/com/hatanaka/ecommerce/checkout/CheckoutApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/test/java/com/hatanaka/ecommerce/checkout/CheckoutApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-frontend-master/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-frontend/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/src/main/java/com/hatanaka/ecommerce/payment/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/java/com/hatanaka/ecommerce/payment/PaymentApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api-master/src/test/java/com/hatanaka/ecommerce/payment/PaymentApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/test/java/com/hatanaka/ecommerce/payment/PaymentApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/config/StreamingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/config/StreamingConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/entity/CheckoutEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/entity/CheckoutEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,30 +39,193 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/ecommerce-checkout-api">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ecommerce-payment-api">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="checkout" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="checkout" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="checkout" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="source generation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="payment" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="payment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="payment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectId" id="1xoUc1rUrrI7R4VzOpJOvHuetMK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/avro" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.14513788" />
+    <property name="project.structure.side.proportion" value="0.15235457" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/avro" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.ecommerce-checkout-api [generateAvroJava]">
+    <configuration name="ecommerce-checkout-api [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ecommerce-checkout-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ecommerce-checkout-api [generateAvroJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ecommerce-checkout-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--scan --scan --stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateAvroJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ecommerce-payment-api [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ecommerce-payment-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ecommerce-payment-api [generateAvroJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ecommerce-payment-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateAvroJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ecommerce-checkout-api [generateAvroJava]" />
+        <item itemvalue="Gradle.ecommerce-payment-api [clean]" />
+        <item itemvalue="Gradle.ecommerce-checkout-api [clean]" />
+        <item itemvalue="Gradle.ecommerce-payment-api [generateAvroJava]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -126,5 +237,20 @@
       <updated>1631021012305</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

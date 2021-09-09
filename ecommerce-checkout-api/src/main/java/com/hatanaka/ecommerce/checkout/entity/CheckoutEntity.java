@@ -2,14 +2,12 @@ package com.hatanaka.ecommerce.checkout.entity;
 
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Builder
 @Data
 @Entity
-@NoArgsConstructor
 public class CheckoutEntity {
 
     @Id
