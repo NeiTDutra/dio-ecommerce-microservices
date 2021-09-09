@@ -61,3 +61,5 @@ generateAvroJava {
     source "src/main/resources/avro"
     outputDir = file("src/main/java/avro")
 }
+
+compileJava.source(generateAvroJava.outputs)

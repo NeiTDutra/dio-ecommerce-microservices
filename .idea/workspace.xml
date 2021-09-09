@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7323d3a-9595-4394-bd9f-63fe72f0372f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/java/com/hatanaka/ecommerce/payment/config/StreamingConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/java/com/hatanaka/ecommerce/payment/listener/CheckoutCreatedListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/java/com/hatanaka/ecommerce/payment/streaming/CheckoutProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/avro/CheckoutCreated.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/avro/PaymentCreated.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/listener/PaymentPaydListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/avro/PaymentCreated.avsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/config/StreamingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/config/StreamingConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/entity/CheckoutEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/entity/CheckoutEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/repository/CheckoutRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-checkout-api/src/main/java/com/hatanaka/ecommerce/checkout/repository/CheckoutRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce-payment-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-payment-api/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-payment-api/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +66,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="payment" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="source generation" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -123,17 +113,39 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/avro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/avro" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.14513788" />
     <property name="project.structure.side.proportion" value="0.15235457" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ecommerce-checkout-api/src/main/resources/avro" />
       <recent name="$PROJECT_DIR$/ecommerce-payment-api/src/main/resources/avro" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.ecommerce-checkout-api [generateAvroJava]">
+    <configuration name="ecommerce-checkout-api [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ecommerce-checkout-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ecommerce-checkout-api [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -176,33 +188,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ecommerce-payment-api [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ecommerce-payment-api" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="ecommerce-payment-api [generateAvroJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/ecommerce-payment-api" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--stacktrace" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -218,12 +209,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ecommerce-payment-api [generateAvroProtocol]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ecommerce-payment-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateAvroProtocol" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ecommerce-checkout-api [generateAvroJava]" />
-        <item itemvalue="Gradle.ecommerce-payment-api [clean]" />
         <item itemvalue="Gradle.ecommerce-checkout-api [clean]" />
+        <item itemvalue="Gradle.ecommerce-checkout-api [build]" />
         <item itemvalue="Gradle.ecommerce-payment-api [generateAvroJava]" />
+        <item itemvalue="Gradle.ecommerce-payment-api [generateAvroProtocol]" />
       </list>
     </recent_temporary>
   </component>

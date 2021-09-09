@@ -8,8 +8,16 @@
 
 ## Escopo do Produto
 
-*TODO...*
+Formulário com os dados do cliente e forma de pagamento
+
+Validação dos dados e validação da forma de pagamento
 
 ## Escopo do projeto
 
-*TODO...*
+- Frontend
+    - Formulário para inserir os dados do cliente com identificação,
+      endereço e forma de pagamento
+
+- Backend
+    - API para validação do cadastro geral
+    - API para validação da forma de pagamento
